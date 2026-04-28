@@ -38,9 +38,9 @@ By entering customers' names at different rates, try to create scenarios where c
 
 ## Running the code
 
-To run the tests:
+To run the tests (with coverage):
 
-    ./gradlew test
+    ./gradlew check
 
 To run the main program:
 

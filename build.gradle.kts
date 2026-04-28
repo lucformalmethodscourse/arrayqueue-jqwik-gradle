@@ -1,3 +1,7 @@
+require(JavaVersion.current() >= JavaVersion.VERSION_21) {
+    "This project requires Java 21 or newer (found ${JavaVersion.current()})"
+}
+
 plugins {
     java
     application
@@ -7,12 +11,6 @@ plugins {
 
 group = "edu.luc.cs"
 version = "1.0-SNAPSHOT"
-
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(25))
-    }
-}
 
 repositories {
     mavenCentral()
